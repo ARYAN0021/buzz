@@ -1,8 +1,8 @@
 import { StatusBar } from 'expo-status-bar';
 import React from 'react';
 import { StyleSheet, Text, View } from 'react-native';
-import  fb from "./screens/fb.js"
-import insta from './screens/insta.js';
+import  Facebook from "./screens/Facebook.js"
+import Instagram from "./screens/Instagram.js"
 import {createAppContainer} from "react-navigation";
 import {createBottomTabNavigator} from "react-navigation-tabs";
 
@@ -15,8 +15,8 @@ export default class App extends React.Component{
   }
 }
 const TabNavigator=createBottomTabNavigator({
-  fb:{screen:fb},
-  insta:{screen:insta}
+  Facebook:{screen:Facebook},
+  Instagram:{screen:Instagram}
 })
 const AppContainer = createAppContainer(TabNavigator)
 
